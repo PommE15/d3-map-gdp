@@ -1,5 +1,6 @@
 var gdp = getJsonGDP(),
-tBody = document.getElementById("gdpTableBody");  
+    codes= getCountryCodes(),
+    tBody = document.getElementById("gdpTableBody");  
 
 /* gdb map */
 var svg = d3.select("svg#gdpMap"),
@@ -26,9 +27,15 @@ d3.json(json, function(err, map) {
        .attr("class", function(d) { 
          /* click event */
          this.addEventListener("click", function(){ 
-           console.log(d.properties.name); 
+           console.log(d.properties.name + "[" + d.id + "]"); 
+           var a3Code;
+           codes.forEach(function(code) {
+             if (d.id === parseInt(code.num)) {
+               a3Code = code.a3;
+             }
+           });
            gdp.forEach(function(c) {
-             if (c.countryName.slice(0,5) === d.properties.name.slice(0,5)) {
+             if (c.countryCode === a3Code) {
                console.log(c.countryName + ": " + c.millionUSD);
              }
            });
