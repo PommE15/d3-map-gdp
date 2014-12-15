@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GDP by country</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="gdp-csv-to-json.js"></script>
+  </head>
+  <body>
+
+    <h1>GDP by country</h1>
+
+    <!-- Map goes here -->
+    <div class="gdp-map l-left">
+      <svg id="gdpMap"></svg>
+    </div>
+
+    <!-- Table goes here -->
+    <div class="gdp-table l-right">
+      <table>
+        <thead>
+          <tr>
+            <th>Country Name</th>
+            <th>GDP<br>(millions of USD)</th>
+          </tr>
+        </thead>
+        <tbody id="gdpTableBody"></tbody>
+      </table> 
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

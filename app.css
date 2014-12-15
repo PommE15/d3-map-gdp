@@ -1,0 +1,46 @@
+/* page: */
+/* layout (l) */
+.l-left {
+  width: 900px;
+  float: left;
+}
+.l-right {
+  width: calc(100% - 900px);
+  float: right;
+}
+
+/* components */
+/* svg */
+svg {
+  width: 900px;
+  height: 540px;
+  position: fixed;
+}
+path {
+  fill: darkgrey;
+}
+path:hover {
+  fill: dimgrey;
+}
+.pin:hover {
+  cursor: pointer;
+}
+
+/* table */
+table {
+  margin-left: 1em;
+}
+th {
+  width: 6em;
+  height: 2em;
+  text-align: left;
+  vertical-align: bottom;
+  padding-bottom: 0.5em;
+}
+th:nth-child(2) {
+  text-align: center;
+}
+td:nth-child(2) {
+  text-align: right;
+  padding-right: 3em;
+}
