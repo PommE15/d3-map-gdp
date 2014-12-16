@@ -5,17 +5,27 @@ var gdp = getJsonGDP(),
 /* gdb map */
 var svg = d3.select("svg#gdpMap"),
     json = "world-topo-110m.json",
-    proj = d3.geo.mercator().center([0, 0]).scale(125),
+    proj = d3.geo.mercator().center([0, 60]).scale(130),
     path = d3.geo.path().projection(proj);
 
 d3.json(json, function(err, map) {
   if (err) { return console.log(error); }
-
+    var codeNumToA3 = {};
     svg.selectAll("path")
        .data(topojson.feature(map, map.objects.countries).features)
        .enter()
        .append("path")
-       .attr("d", path);
+       .attr("d", path)
+       .attr("class", function(d) {
+         var a3Code = "NAC"; // NAC = not a code
+         codes.forEach(function(code) {
+           if (d.id === parseInt(code.num)) {
+             codeNumToA3[code.num] = a3Code = code.a3;
+             return;
+           }
+         });
+         return "code" + a3Code;
+       });
        
     svg.selectAll("text")
        .data(topojson.feature(map, map.objects.countries).features)
@@ -27,20 +37,14 @@ d3.json(json, function(err, map) {
        .attr("class", function(d) { 
          /* click event */
          this.addEventListener("click", function(){ 
-           console.log(d.properties.name + "[" + d.id + "]"); 
-           var a3Code;
-           codes.forEach(function(code) {
-             if (d.id === parseInt(code.num)) {
-               a3Code = code.a3;
-             }
-           });
-           gdp.forEach(function(c) {
-             if (c.countryCode === a3Code) {
-               console.log(c.countryName + ": " + c.millionUSD);
+           gdp.forEach(function(gdp) {
+             if (gdp.countryCode === codeNumToA3[d.id]) {
+               console.log("map: " + d.properties.name + "[" + d.id + "]"); 
+               console.log("gdp: " + gdp.countryName + "[" + gdp.countryCode + "], " + gdp.millionUSD);
              }
            });
          }, false);
-         return "pin"; 
+         return "pin code" + codeNumToA3[d.id]; 
        })
        .attr("dy", "1em")
        .text(function(d) {
