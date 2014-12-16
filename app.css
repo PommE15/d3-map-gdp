@@ -11,14 +11,17 @@
 
 .title {
   position: fixed;
-  padding-right: 7px;
+  top: 0px;
+  right: 500px;
   border-bottom: 7px solid black;
   z-index: 1000;
 }
 .selected-pin {
   position: fixed;
-  top: 60px;
+  top: 66px;
+  right: 500px;
   z-index: 500;
+  text-align: right;
 }
 
 .header-bg {
@@ -34,23 +37,23 @@
 /* components */
 /* map and svg */
 .gdp-map-legend {
-  width: 249px;
-  height: 15px;
+  width: 242px;
+  height: 5px;
   position: fixed;
-  top: 157px;
-  border-top: 1px solid dimgrey;
-  background: linear-gradient(to right, lightgrey 0%, lightgrey 9%, white 9%, white 10%, rgb(255,255,50) 10%,rgb(100,100,200) 100%);
+  top: 175px;
+  right: 500px;
+  border-bottom: 5px solid dimgrey;
+  background: linear-gradient(to right, lightgrey 0%, lightgrey 9%, dimgrey 9%, dimgrey 10%, rgb(255,255,50) 10%,rgb(100,100,200) 100%);
   z-index: 500;
 }
 .gdp-map-legend [class*="caption"] {
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: dimgray;
   position: relative;
-  top: 15px;
+  top: 5px;
 }
-.caption-end {
-  left: 195px;
-}
+.caption-str { left: 6px; }
+.caption-end { left: 200px; }
 
 svg {
   width: 975px;
@@ -90,6 +93,7 @@ svg [class*="code"]:hover {
 }
 
 table {
+  margin-top: 1em;
   margin-left: 1em;
 }
 

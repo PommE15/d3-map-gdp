@@ -131,7 +131,7 @@ var onPinEvent = function(that, d, eventType1, eventType2) {
       name = data[d.id].name;
       gdp = data[d.id].gdp;
       unit = ",000,000 USD";
-      rank = ":" + data[d.id].rank;
+      rank = data[d.id].rank + ": ";
     }
     document.getElementById("countryName").textContent = name;
     document.getElementById("countryGDP").textContent = gdp;
