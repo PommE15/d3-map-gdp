@@ -3,16 +3,11 @@ var gdp = getCountryGDP(),
     codeNumToA3 = {},
     data = {};
 
-/* data */
-
-/* events */
-
 /* gdb map */
 var svg = d3.select("svg#gdpMap"),
     json = "world-topo-110m.json",
-    proj = d3.geo.mercator().center([0, 42]).scale(180),
-    path = d3.geo.path().projection(proj)
-    color = d3.scale.quantize().range(["orange", "yellow", "lightyellow"]);
+    proj = d3.geo.mercator().center([0, 58]).scale(180),
+    path = d3.geo.path().projection(proj);
 
 d3.json(json, function(err, map) {
   if (err) { return console.log(error); }
@@ -35,10 +30,11 @@ d3.json(json, function(err, map) {
        // create a data table: id to gdp data
        gdp.forEach(function(gdp) {
          if (gdp.countryCode === codeNumToA3[d.id]) {
-           data[d.id] = {"a3"  : codeNumToA3[d.id]};
-           data[d.id] = {"num" : gdp.countryCode};
-           data[d.id] = {"name": gdp.countryName};
-           data[d.id] = {"gdp" : gdp.millionUSD};
+           data[d.id] = {"a3": codeNumToA3[d.id]};
+           data[d.id].num = gdp.countryCode;
+           data[d.id].name = gdp.countryName;
+           data[d.id].rank = gdp.ranking;
+           data[d.id].gdp = gdp.millionUSD;
            return;
          }
        });
@@ -48,11 +44,17 @@ d3.json(json, function(err, map) {
      })
      .attr("d", path)
      .style("fill", function(d) {
-       //var value = d.id;
-       //if (value) {return color(value);}
-       //else {return "lightgrey";}
+       var r = 225,
+           g = 225,
+           b = 225;
+       if (data[d.id]) {
+         var rank = data[d.id].rank; 
+         r = 255 - rank;
+         g = 255 - rank;
+         b = 150;
+       }
+       return "rgb("+ r + "," + g + "," + b + ")";
      });
-
   /* draw text */
   svg.selectAll("text")
      .data(topojson.feature(map, map.objects.countries).features)
@@ -68,6 +70,7 @@ d3.json(json, function(err, map) {
        return "pin"; 
      })
      .attr("data-code", function(d) {return codeNumToA3[d.id];})
+     .attr("id", function(d) {return "t" + codeNumToA3[d.id];})
      .attr("dy", "1em")
      .text(function(d) {
        var marker = d.properties.name;
@@ -76,29 +79,37 @@ d3.json(json, function(err, map) {
        //else { console.log(marker); }
        return marker;
      });
-  //console.log(data); 
+     //console.log(data); 
 });
 
 var onPinEvent = function(that, d, eventType1, eventType2) {
-  var pathNode,
-      eventType;
-          
+  var pathNode;
   that.addEventListener(eventType1, function() {
+    var name = d.properties.name, 
+        gdp = "NA";  
     /* highlight the pin with its land */ 
     pathNode = document.getElementById("p" + codeNumToA3[d.id]);
+    pathColor = pathNode.style.fill;          
     if (pathNode !== null) {
-      pathNode.classList.add("fill-black"); 
+      pathNode.style.fill = "dimgrey";
+      //pathNode.classList.add("fill-black");
     } else {
-      //console.log(d.properties.name+"["+d.id+"]:" + "no num to a3 mapping!");
+      console.log(name+"["+d.id+"]:" + "no codes!");
     }
     /* display data */
-    if (data[d.id]) { console.log(data[d.id].gdp); }    
+    if (data[d.id]) { 
+      name = data[d.id].name;
+      gdp = data[d.id].gdp + " (millions of USD)";
+    }
+    document.getElementById("countryName").textContent = name;
+    document.getElementById("countryGDP").textContent = gdp;
   }, false);
 
   that.addEventListener(eventType2, function(e){
     pathNode = document.getElementById("p"+e.target.dataset.code);
     if (pathNode !== null) {
-      pathNode.classList.remove("fill-black");
+      pathNode.style.fill = pathColor;
+      //pathNode.classList.remove("fill-black");
     }
   }, false);
 }
