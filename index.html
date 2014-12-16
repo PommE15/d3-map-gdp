@@ -13,13 +13,20 @@
     <h2 class="selected-pin">
       <span id="countryName">Click or hover on a pin in the map ...</span><br>
       <span id="countryGDP"></span>
-      <small id="countryGDPUnit"></small>
+      <small id="countryGDPUnit"></small><br>
+      <small class="gdp-ranking">Ranking<span id="countryGDPRank"></span></small>
     </h2>
+    <div class="header-bg"></div>
+
     <!-- Map goes here -->
     <div class="gdp-map l-left">
       <svg id="gdpMap"></svg>
+      <div class="gdp-map-legend">
+        <span class="caption-str">NA 1</span>
+        <span class="caption-end">190</span>
+      </div>
     </div>
-
+    
     <!-- Table goes here -->
     <div class="gdp-table l-right">
       <table>

@@ -107,7 +107,8 @@ var onPinEvent = function(that, d, eventType1, eventType2) {
   that.addEventListener(eventType1, function(e) {
     var name = d.properties.name, 
         gdp = "NA",
-        unit = "";
+        unit = "",
+        rank = "";
  
     /* remove highlight after a period if it's click */
     if ((eventType1 === "click") && (pathNode !== null)) {
@@ -130,10 +131,12 @@ var onPinEvent = function(that, d, eventType1, eventType2) {
       name = data[d.id].name;
       gdp = data[d.id].gdp;
       unit = ",000,000 USD";
+      rank = ":" + data[d.id].rank;
     }
     document.getElementById("countryName").textContent = name;
     document.getElementById("countryGDP").textContent = gdp;
     document.getElementById("countryGDPUnit").textContent = unit;
+    document.getElementById("countryGDPRank").textContent = rank;
   }, false);
 
   that.addEventListener(eventType2, function(e){

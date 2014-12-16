@@ -21,8 +21,37 @@
   z-index: 500;
 }
 
+.header-bg {
+  position: fixed;
+  background-color: rgba(255,255,255,0.75);
+  width: 249px;
+  height: 200px;
+  padding: 0 10px;
+  margin-left: -10px;
+  z-index: 250;
+}
+
 /* components */
-/* svg */
+/* map and svg */
+.gdp-map-legend {
+  width: 249px;
+  height: 15px;
+  position: fixed;
+  top: 157px;
+  border-top: 1px solid dimgrey;
+  background: linear-gradient(to right, lightgrey 0%, lightgrey 9%, white 9%, white 10%, rgb(255,255,50) 10%,rgb(100,100,200) 100%);
+  z-index: 500;
+}
+.gdp-map-legend [class*="caption"] {
+  font-size: 0.8em;
+  color: dimgray;
+  position: relative;
+  top: 15px;
+}
+.caption-end {
+  left: 195px;
+}
+
 svg {
   width: 975px;
   height: 760px;
