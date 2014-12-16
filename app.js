@@ -64,9 +64,11 @@ d3.json(json, function(err, map) {
        return "translate(" + path.centroid(d) + ")"; 
      })
      .attr("class", function(d) {
+       
        /* events */
        onPinEvent(this, d, "mouseover", "mouseout");
        onPinEvent(this, d, "click");
+       
        return "pin"; 
      })
      .attr("data-code", function(d) {return codeNumToA3[d.id];})
@@ -82,38 +84,6 @@ d3.json(json, function(err, map) {
      //console.log(data); 
 });
 
-var onPinEvent = function(that, d, eventType1, eventType2) {
-  var pathNode;
-  that.addEventListener(eventType1, function() {
-    var name = d.properties.name, 
-        gdp = "NA";  
-    /* highlight the pin with its land */ 
-    pathNode = document.getElementById("p" + codeNumToA3[d.id]);
-    pathColor = pathNode.style.fill;          
-    if (pathNode !== null) {
-      pathNode.style.fill = "dimgrey";
-      //pathNode.classList.add("fill-black");
-    } else {
-      console.log(name+"["+d.id+"]:" + "no codes!");
-    }
-    /* display data */
-    if (data[d.id]) { 
-      name = data[d.id].name;
-      gdp = data[d.id].gdp + " (millions of USD)";
-    }
-    document.getElementById("countryName").textContent = name;
-    document.getElementById("countryGDP").textContent = gdp;
-  }, false);
-
-  that.addEventListener(eventType2, function(e){
-    pathNode = document.getElementById("p"+e.target.dataset.code);
-    if (pathNode !== null) {
-      pathNode.style.fill = pathColor;
-      //pathNode.classList.remove("fill-black");
-    }
-  }, false);
-}
-
 /* gdp table */
 var tBody = document.getElementById("gdpTableBody");  
 gdp.forEach(function(c) {
@@ -127,3 +97,49 @@ gdp.forEach(function(c) {
   tr.appendChild(td);  
   tBody.appendChild(tr);  
 });
+
+/* events: click and hover */
+var pathColor,
+    pathNode = null;
+var onPinEvent = function(that, d, eventType1, eventType2) {
+  //var pathNode = null;
+  
+  that.addEventListener(eventType1, function(e) {
+    var name = d.properties.name, 
+        gdp = "NA",
+        unit = "";
+ 
+    /* remove highlight after a period if it's click */
+    if ((eventType1 === "click") && (pathNode !== null)) {
+        console.log(pathNode);
+        console.log(pathColor);
+        pathNode.style.fill = pathColor;
+    }
+
+    /* highlight the pin with its land */ 
+    pathNode = document.getElementById("p" + codeNumToA3[d.id]);
+    if (pathNode !== null) {
+      pathColor = pathNode.style.fill;          
+      pathNode.style.fill = "dimgrey";
+    } else {
+      //console.log(name+"["+d.id+"]:" + "no codes!");
+    }
+
+    /* display data */
+    if (data[d.id]) { 
+      name = data[d.id].name;
+      gdp = data[d.id].gdp;
+      unit = ",000,000 USD";
+    }
+    document.getElementById("countryName").textContent = name;
+    document.getElementById("countryGDP").textContent = gdp;
+    document.getElementById("countryGDPUnit").textContent = unit;
+  }, false);
+
+  that.addEventListener(eventType2, function(e){
+    pathNode = document.getElementById("p"+e.target.dataset.code);
+    if (pathNode !== null) {
+      pathNode.style.fill = pathColor;
+    }
+  }, false);
+}
