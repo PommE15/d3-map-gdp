@@ -1,5 +1,5 @@
-var getJsonGDP = function() {
-  var jsonGDP = [
+var getCountryGDP = function() {
+  var gdp = [
   {
     "countryCode":"USA",
     "countryName":"United States",
@@ -1147,5 +1147,5 @@ var getJsonGDP = function() {
     "ranking":191
   }];
 
-  return jsonGDP;
+  return gdp;
 }

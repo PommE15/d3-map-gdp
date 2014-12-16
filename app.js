@@ -1,12 +1,13 @@
-var gdp = getJsonGDP(),
+var gdp = getCountryGDP(),
     codes= getCountryCodes(),
     tBody = document.getElementById("gdpTableBody");  
 
 /* gdb map */
 var svg = d3.select("svg#gdpMap"),
     json = "world-topo-110m.json",
-    proj = d3.geo.mercator().center([0, 60]).scale(130),
-    path = d3.geo.path().projection(proj);
+    proj = d3.geo.mercator().center([0, 42]).scale(180),
+    path = d3.geo.path().projection(proj)
+    color = d3.scale.quantize().range(["orange", "yellow", "lightyellow"]);
 
 d3.json(json, function(err, map) {
   if (err) { return console.log(error); }
@@ -15,18 +16,23 @@ d3.json(json, function(err, map) {
        .data(topojson.feature(map, map.objects.countries).features)
        .enter()
        .append("path")
-       .attr("d", path)
-       .attr("class", function(d) {
+       .attr("id", function(d) {
          var a3Code = "NAC"; // NAC = not a code
          codes.forEach(function(code) {
            if (d.id === parseInt(code.num)) {
-             codeNumToA3[code.num] = a3Code = code.a3;
+             codeNumToA3[d.id] = a3Code = code.a3;
              return;
            }
          });
-         return "code" + a3Code;
+         return a3Code;
+       })
+       .attr("d", path)
+       .style("fill", function(d) {
+         //var value = d.id;
+         //if (value) {return color(value);}
+         //else {return "lightgrey";}
        });
-       
+    
     svg.selectAll("text")
        .data(topojson.feature(map, map.objects.countries).features)
        .enter()
@@ -35,15 +41,34 @@ d3.json(json, function(err, map) {
          return "translate(" + path.centroid(d) + ")"; 
        })
        .attr("class", function(d) { 
-         /* click event */
-         this.addEventListener("click", function(){ 
-           gdp.forEach(function(gdp) {
-             if (gdp.countryCode === codeNumToA3[d.id]) {
-               console.log("map: " + d.properties.name + "[" + d.id + "]"); 
-               console.log("gdp: " + gdp.countryName + "[" + gdp.countryCode + "], " + gdp.millionUSD);
-             }
-           });
+         var country = {},
+             pathNode;
+         /* events */
+         this.addEventListener("mouseout", function(){
+           if (pathNode !== null) {
+             pathNode.classList.remove("fill-black");
+           }
          }, false);
+         this.addEventListener("mouseover", function() {
+           //var pathNode;
+           country.id = d.id;
+           country.a3 = codeNumToA3[d.id];
+           gdp.forEach(function(gdp) {
+           if (gdp.countryCode === codeNumToA3[d.id]) {
+             country.name = gdp.countryName;
+             country.gdp = gdp.millionUSD;
+             //console.log("map: " + d.properties.name + "[" + d.id + "]"); 
+             //console.log("gdp: " + gdp.countryName + "[" + gdp.countryCode + "], " + gdp.millionUSD);
+           }
+           }); 
+           pathNode = document.getElementById(country.a3);
+           if (pathNode !== null) {
+             console.log(country);
+             pathNode.classList.add("fill-black"); 
+           } else {
+             console.log(d.properties.name+"["+d.id+"]:" + "no num to a3 mapping!");
+           }
+         });
          return "pin code" + codeNumToA3[d.id]; 
        })
        .attr("dy", "1em")

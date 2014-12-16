@@ -1,1438 +1,1438 @@
 var getCountryCodes = function() {
   var codes = [
   {
-    "name":"FGHANISTAN",
     "a2":"AF",
     "a3":"AFG",
-    "num":"004"
+    "num":"004",
+    "name":"FGHANISTAN"
   },
   {
-    "name":"ALBANIA",
     "a2":"AL",
     "a3":"ALB",
-    "num":"008"
+    "num":"008",
+    "name":"ALBANIA"
   },
   {
-    "name":"ALGERIA",
     "a2":"DZ",
     "a3":"DZA",
-    "num":"012"
+    "num":"012",
+    "name":"ALGERIA"
   },
   {
-    "name":"AMERICANSAMOA",
     "a2":"AS",
     "a3":"ASM",
-    "num":"016"
+    "num":"016",
+    "name":"AMERICANSAMOA"
   },
   {
-    "name":"ANDORRA",
     "a2":"AD",
     "a3":"AND",
-    "num":"020"
+    "num":"020",
+    "name":"ANDORRA"
   },
   {
-    "name":"ANGOLA",
     "a2":"AO",
     "a3":"AGO",
-    "num":"024"
+    "num":"024",
+    "name":"ANGOLA"
   },
   {
-    "name":"ANGUILLA",
     "a2":"AI",
     "a3":"AIA",
-    "num":"660"
+    "num":"660",
+    "name":"ANGUILLA"
   },
   {
-    "name":"ANTARCTICA",
     "a2":"AQ",
     "a3":"ATA",
-    "num":"010"
+    "num":"010",
+    "name":"ANTARCTICA"
   },
   {
-    "name":"ANTIGUAANDBARBUDA",
     "a2":"AG",
     "a3":"ATG",
-    "num":"028"
+    "num":"028",
+    "name":"ANTIGUAANDBARBUDA"
   },
   {
-    "name":"ARGENTINA",
     "a2":"AR",
     "a3":"ARG",
-    "num":"032"
+    "num":"032",
+    "name":"ARGENTINA"
   },
   {
-    "name":"ARMENIA",
     "a2":"AM",
     "a3":"ARM",
-    "num":"051"
+    "num":"051",
+    "name":"ARMENIA"
   },
   {
-    "name":"ARUBA",
     "a2":"AW",
     "a3":"ABW",
-    "num":"533"
+    "num":"533",
+    "name":"ARUBA"
   },
   {
-    "name":"AUSTRALIA",
     "a2":"AU",
     "a3":"AUS",
-    "num":"036"
+    "num":"036",
+    "name":"AUSTRALIA"
   },
   {
-    "name":"AUSTRIA",
     "a2":"AT",
     "a3":"AUT",
-    "num":"040"
+    "num":"040",
+    "name":"AUSTRIA"
   },
   {
-    "name":"AZERBAIJAN",
     "a2":"AZ",
     "a3":"AZE",
-    "num":"031"
+    "num":"031",
+    "name":"AZERBAIJAN"
   },
   {
-    "name":"BAHAMAS",
     "a2":"BS",
     "a3":"BHS",
-    "num":"044"
+    "num":"044",
+    "name":"BAHAMAS"
   },
   {
-    "name":"BAHRAIN",
     "a2":"BH",
     "a3":"BHR",
-    "num":"048"
+    "num":"048",
+    "name":"BAHRAIN"
   },
   {
-    "name":"BANGLADESH",
     "a2":"BD",
     "a3":"BGD",
-    "num":"050"
+    "num":"050",
+    "name":"BANGLADESH"
   },
   {
-    "name":"BARBADOS",
     "a2":"BB",
     "a3":"BRB",
-    "num":"052"
+    "num":"052",
+    "name":"BARBADOS"
   },
   {
-    "name":"BELARUS",
     "a2":"BY",
     "a3":"BLR",
-    "num":"112"
+    "num":"112",
+    "name":"BELARUS"
   },
   {
-    "name":"BELGIUM",
     "a2":"BE",
     "a3":"BEL",
-    "num":"056"
+    "num":"056",
+    "name":"BELGIUM"
   },
   {
-    "name":"BELIZE",
     "a2":"BZ",
     "a3":"BLZ",
-    "num":"084"
+    "num":"084",
+    "name":"BELIZE"
   },
   {
-    "name":"BENIN",
     "a2":"BJ",
     "a3":"BEN",
-    "num":"204"
+    "num":"204",
+    "name":"BENIN"
   },
   {
-    "name":"BERMUDA",
     "a2":"BM",
     "a3":"BMU",
-    "num":"060"
+    "num":"060",
+    "name":"BERMUDA"
   },
   {
-    "name":"BHUTAN",
     "a2":"BT",
     "a3":"BTN",
-    "num":"064"
+    "num":"064",
+    "name":"BHUTAN"
   },
   {
-    "name":"BOLIVIA",
     "a2":"BO",
     "a3":"BOL",
-    "num":"068"
+    "num":"068",
+    "name":"BOLIVIA"
   },
   {
-    "name":"BOSNIAANDHERZEGOWINA",
     "a2":"BA",
     "a3":"BIH",
-    "num":"070"
+    "num":"070",
+    "name":"BOSNIAANDHERZEGOWINA"
   },
   {
-    "name":"BOTSWANA",
     "a2":"BW",
     "a3":"BWA",
-    "num":"072"
+    "num":"072",
+    "name":"BOTSWANA"
   },
   {
-    "name":"BOUVETISLAND",
     "a2":"BV",
     "a3":"BVT",
-    "num":"074"
+    "num":"074",
+    "name":"BOUVETISLAND"
   },
   {
-    "name":"BRAZIL",
     "a2":"BR",
     "a3":"BRA",
-    "num":"076"
+    "num":"076",
+    "name":"BRAZIL"
   },
   {
-    "name":"BRITISHINDIANOCEANTERRITORY",
     "a2":"IO",
     "a3":"IOT",
-    "num":"086"
+    "num":"086",
+    "name":"BRITISHINDIANOCEANTERRITORY"
   },
   {
-    "name":"BRUNEIDARUSSALAM",
     "a2":"BN",
     "a3":"BRN",
-    "num":"096"
+    "num":"096",
+    "name":"BRUNEIDARUSSALAM"
   },
   {
-    "name":"BULGARIA",
     "a2":"BG",
     "a3":"BGR",
-    "num":"100"
+    "num":"100",
+    "name":"BULGARIA"
   },
   {
-    "name":"BURKINAFASO",
     "a2":"BF",
     "a3":"BFA",
-    "num":"854"
+    "num":"854",
+    "name":"BURKINAFASO"
   },
   {
-    "name":"BURUNDI",
     "a2":"BI",
     "a3":"BDI",
-    "num":"108"
+    "num":"108",
+    "name":"BURUNDI"
   },
   {
-    "name":"CAMBODIA",
     "a2":"KH",
     "a3":"KHM",
-    "num":"116"
+    "num":"116",
+    "name":"CAMBODIA"
   },
   {
-    "name":"CAMEROON",
     "a2":"CM",
     "a3":"CMR",
-    "num":"120"
+    "num":"120",
+    "name":"CAMEROON"
   },
   {
-    "name":"CANADA",
     "a2":"CA",
     "a3":"CAN",
-    "num":"124"
+    "num":"124",
+    "name":"CANADA"
   },
   {
-    "name":"CAPEVERDE",
     "a2":"CV",
     "a3":"CPV",
-    "num":"132"
+    "num":"132",
+    "name":"CAPEVERDE"
   },
   {
-    "name":"CAYMANISLANDS",
     "a2":"KY",
     "a3":"CYM",
-    "num":"136"
+    "num":"136",
+    "name":"CAYMANISLANDS"
   },
   {
-    "name":"CENTRALAFRICANREPUBLIC",
     "a2":"CF",
     "a3":"CAF",
-    "num":"140"
+    "num":"140",
+    "name":"CENTRALAFRICANREPUBLIC"
   },
   {
-    "name":"CHAD",
     "a2":"TD",
     "a3":"TCD",
-    "num":"148"
+    "num":"148",
+    "name":"CHAD"
   },
   {
-    "name":"CHILE",
     "a2":"CL",
     "a3":"CHL",
-    "num":"152"
+    "num":"152",
+    "name":"CHILE"
   },
   {
-    "name":"CHINA",
     "a2":"CN",
     "a3":"CHN",
-    "num":"156"
+    "num":"156",
+    "name":"CHINA"
   },
   {
-    "name":"CHRISTMASISLAND",
     "a2":"CX",
     "a3":"CXR",
-    "num":"162"
+    "num":"162",
+    "name":"CHRISTMASISLAND"
   },
   {
-    "name":"COCOS(KEELING)ISLANDS",
     "a2":"CC",
     "a3":"CCK",
-    "num":"166"
+    "num":"166",
+    "name":"COCOS(KEELING)ISLANDS"
   },
   {
-    "name":"COLOMBIA",
     "a2":"CO",
     "a3":"COL",
-    "num":"170"
+    "num":"170",
+    "name":"COLOMBIA"
   },
   {
-    "name":"COMOROS",
     "a2":"KM",
     "a3":"COM",
-    "num":"174"
+    "num":"174",
+    "name":"COMOROS"
   },
   {
-    "name":"CONGO",
     "a2":"CG",
     "a3":"COG",
-    "num":"178"
+    "num":"178",
+    "name":"CONGO"
   },
   {
-    "name":"COOKISLANDS",
     "a2":"CK",
     "a3":"COK",
-    "num":"184"
+    "num":"184",
+    "name":"COOKISLANDS"
   },
   {
-    "name":"COSTARICA",
     "a2":"CR",
     "a3":"CRI",
-    "num":"188"
+    "num":"188",
+    "name":"COSTARICA"
   },
   {
-    "name":"COTED'IVOIRE",
     "a2":"CI",
     "a3":"CIV",
-    "num":"384"
+    "num":"384",
+    "name":"COTED'IVOIRE"
   },
   {
-    "name":"CROATIA(localname:Hrvatska)",
     "a2":"HR",
     "a3":"HRV",
-    "num":"191"
+    "num":"191",
+    "name":"CROATIA(localname:Hrvatska)"
   },
   {
-    "name":"CUBA",
     "a2":"CU",
     "a3":"CUB",
-    "num":"192"
+    "num":"192",
+    "name":"CUBA"
   },
   {
-    "name":"CYPRUS",
     "a2":"CY",
     "a3":"CYP",
-    "num":"196"
+    "num":"196",
+    "name":"CYPRUS"
   },
   {
-    "name":"CZECHREPUBLIC",
     "a2":"CZ",
     "a3":"CZE",
-    "num":"203"
+    "num":"203",
+    "name":"CZECHREPUBLIC"
   },
   {
-    "name":"DENMARK",
     "a2":"DK",
     "a3":"DNK",
-    "num":"208"
+    "num":"208",
+    "name":"DENMARK"
   },
   {
-    "name":"DJIBOUTI",
     "a2":"DJ",
     "a3":"DJI",
-    "num":"262"
+    "num":"262",
+    "name":"DJIBOUTI"
   },
   {
-    "name":"DOMINICA",
     "a2":"DM",
     "a3":"DMA",
-    "num":"212"
+    "num":"212",
+    "name":"DOMINICA"
   },
   {
-    "name":"DOMINICANREPUBLIC",
     "a2":"DO",
     "a3":"DOM",
-    "num":"214"
+    "num":"214",
+    "name":"DOMINICANREPUBLIC"
   },
   {
-    "name":"EASTTIMOR",
     "a2":"TP",
     "a3":"TMP",
-    "num":"626"
+    "num":"626",
+    "name":"EASTTIMOR"
   },
   {
-    "name":"ECUADOR",
     "a2":"EC",
     "a3":"ECU",
-    "num":"218"
+    "num":"218",
+    "name":"ECUADOR"
   },
   {
-    "name":"EGYPT",
     "a2":"EG",
     "a3":"EGY",
-    "num":"818"
+    "num":"818",
+    "name":"EGYPT"
   },
   {
-    "name":"ELSALVADOR",
     "a2":"SV",
     "a3":"SLV",
-    "num":"222"
+    "num":"222",
+    "name":"ELSALVADOR"
   },
   {
-    "name":"EQUATORIALGUINEA",
     "a2":"GQ",
     "a3":"GNQ",
-    "num":"226"
+    "num":"226",
+    "name":"EQUATORIALGUINEA"
   },
   {
-    "name":"ERITREA",
     "a2":"ER",
     "a3":"ERI",
-    "num":"232"
+    "num":"232",
+    "name":"ERITREA"
   },
   {
-    "name":"ESTONIA",
     "a2":"EE",
     "a3":"EST",
-    "num":"233"
+    "num":"233",
+    "name":"ESTONIA"
   },
   {
-    "name":"ETHIOPIA",
     "a2":"ET",
     "a3":"ETH",
-    "num":"231"
+    "num":"231",
+    "name":"ETHIOPIA"
   },
   {
-    "name":"FALKLANDISLANDS(MALVINAS)",
     "a2":"FK",
     "a3":"FLK",
-    "num":"238"
+    "num":"238",
+    "name":"FALKLANDISLANDS(MALVINAS)"
   },
   {
-    "name":"FAROEISLANDS",
     "a2":"FO",
     "a3":"FRO",
-    "num":"234"
+    "num":"234",
+    "name":"FAROEISLANDS"
   },
   {
-    "name":"FIJI",
     "a2":"FJ",
     "a3":"FJI",
-    "num":"242"
+    "num":"242",
+    "name":"FIJI"
   },
   {
-    "name":"FINLAND",
     "a2":"FI",
     "a3":"FIN",
-    "num":"246"
+    "num":"246",
+    "name":"FINLAND"
   },
   {
-    "name":"FRANCE",
     "a2":"FR",
     "a3":"FRA",
-    "num":"250"
+    "num":"250",
+    "name":"FRANCE"
   },
   {
-    "name":"FRANCE",
     "a2":"METROPOLITAN",
     "a3":"FX",
-    "num":"FXX"
+    "num":"FXX",
+    "name":"FRANCE"
   },
   {
-    "name":"FRENCHGUIANA",
     "a2":"GF",
     "a3":"GUF",
-    "num":"254"
+    "num":"254",
+    "name":"FRENCHGUIANA"
   },
   {
-    "name":"FRENCHPOLYNESIA",
     "a2":"PF",
     "a3":"PYF",
-    "num":"258"
+    "num":"258",
+    "name":"FRENCHPOLYNESIA"
   },
   {
-    "name":"FRENCHSOUTHERNTERRITORIES",
     "a2":"TF",
     "a3":"ATF",
-    "num":"260"
+    "num":"260",
+    "name":"FRENCHSOUTHERNTERRITORIES"
   },
   {
-    "name":"GABON",
     "a2":"GA",
     "a3":"GAB",
-    "num":"266"
+    "num":"266",
+    "name":"GABON"
   },
   {
-    "name":"GAMBIA",
     "a2":"GM",
     "a3":"GMB",
-    "num":"270"
+    "num":"270",
+    "name":"GAMBIA"
   },
   {
-    "name":"GEORGIA",
     "a2":"GE",
     "a3":"GEO",
-    "num":"268"
+    "num":"268",
+    "name":"GEORGIA"
   },
   {
-    "name":"GERMANY",
     "a2":"DE",
     "a3":"DEU",
-    "num":"276"
+    "num":"276",
+    "name":"GERMANY"
   },
   {
-    "name":"GHANA",
     "a2":"GH",
     "a3":"GHA",
-    "num":"288"
+    "num":"288",
+    "name":"GHANA"
   },
   {
-    "name":"GIBRALTAR",
     "a2":"GI",
     "a3":"GIB",
-    "num":"292"
+    "num":"292",
+    "name":"GIBRALTAR"
   },
   {
-    "name":"GREECE",
     "a2":"GR",
     "a3":"GRC",
-    "num":"300"
+    "num":"300",
+    "name":"GREECE"
   },
   {
-    "name":"GREENLAND",
     "a2":"GL",
     "a3":"GRL",
-    "num":"304"
+    "num":"304",
+    "name":"GREENLAND"
   },
   {
-    "name":"GRENADA",
     "a2":"GD",
     "a3":"GRD",
-    "num":"308"
+    "num":"308",
+    "name":"GRENADA"
   },
   {
-    "name":"GUADELOUPE",
     "a2":"GP",
     "a3":"GLP",
-    "num":"312"
+    "num":"312",
+    "name":"GUADELOUPE"
   },
   {
-    "name":"GUAM",
     "a2":"GU",
     "a3":"GUM",
-    "num":"316"
+    "num":"316",
+    "name":"GUAM"
   },
   {
-    "name":"GUATEMALA",
     "a2":"GT",
     "a3":"GTM",
-    "num":"320"
+    "num":"320",
+    "name":"GUATEMALA"
   },
   {
-    "name":"GUINEA",
     "a2":"GN",
     "a3":"GIN",
-    "num":"324"
+    "num":"324",
+    "name":"GUINEA"
   },
   {
-    "name":"GUINEA-BISSAU",
     "a2":"GW",
     "a3":"GNB",
-    "num":"624"
+    "num":"624",
+    "name":"GUINEA-BISSAU"
   },
   {
-    "name":"GUYANA",
     "a2":"GY",
     "a3":"GUY",
-    "num":"328"
+    "num":"328",
+    "name":"GUYANA"
   },
   {
-    "name":"HAITI",
     "a2":"HT",
     "a3":"HTI",
-    "num":"332"
+    "num":"332",
+    "name":"HAITI"
   },
   {
-    "name":"HEARDANDMCDONALDISLANDS",
     "a2":"HM",
     "a3":"HMD",
-    "num":"334"
+    "num":"334",
+    "name":"HEARDANDMCDONALDISLANDS"
   },
   {
-    "name":"HONDURAS",
     "a2":"HN",
     "a3":"HND",
-    "num":"340"
+    "num":"340",
+    "name":"HONDURAS"
   },
   {
-    "name":"HONGKONG",
     "a2":"HK",
     "a3":"HKG",
-    "num":"344"
+    "num":"344",
+    "name":"HONGKONG"
   },
   {
-    "name":"HUNGARY",
     "a2":"HU",
     "a3":"HUN",
-    "num":"348"
+    "num":"348",
+    "name":"HUNGARY"
   },
   {
-    "name":"ICELAND",
     "a2":"IS",
     "a3":"ISL",
-    "num":"352"
+    "num":"352",
+    "name":"ICELAND"
   },
   {
-    "name":"INDIA",
     "a2":"IN",
     "a3":"IND",
-    "num":"356"
+    "num":"356",
+    "name":"INDIA"
   },
   {
-    "name":"INDONESIA",
     "a2":"ID",
     "a3":"IDN",
-    "num":"360"
+    "num":"360",
+    "name":"INDONESIA"
   },
   {
-    "name":"IRAN(ISLAMICREPUBLICOF)",
     "a2":"IR",
     "a3":"IRN",
-    "num":"364"
+    "num":"364",
+    "name":"IRAN(ISLAMICREPUBLICOF)"
   },
   {
-    "name":"IRAQ",
     "a2":"IQ",
     "a3":"IRQ",
-    "num":"368"
+    "num":"368",
+    "name":"IRAQ"
   },
   {
-    "name":"IRELAND",
     "a2":"IE",
     "a3":"IRL",
-    "num":"372"
+    "num":"372",
+    "name":"IRELAND"
   },
   {
-    "name":"ISRAEL",
     "a2":"IL",
     "a3":"ISR",
-    "num":"376"
+    "num":"376",
+    "name":"ISRAEL"
   },
   {
-    "name":"ITALY",
     "a2":"IT",
     "a3":"ITA",
-    "num":"380"
+    "num":"380",
+    "name":"ITALY"
   },
   {
-    "name":"JAMAICA",
     "a2":"JM",
     "a3":"JAM",
-    "num":"388"
+    "num":"388",
+    "name":"JAMAICA"
   },
   {
-    "name":"JAPAN",
     "a2":"JP",
     "a3":"JPN",
-    "num":"392"
+    "num":"392",
+    "name":"JAPAN"
   },
   {
-    "name":"JORDAN",
     "a2":"JO",
     "a3":"JOR",
-    "num":"400"
+    "num":"400",
+    "name":"JORDAN"
   },
   {
-    "name":"KAZAKHSTAN",
     "a2":"KZ",
     "a3":"KAZ",
-    "num":"398"
+    "num":"398",
+    "name":"KAZAKHSTAN"
   },
   {
-    "name":"KENYA",
     "a2":"KE",
     "a3":"KEN",
-    "num":"404"
+    "num":"404",
+    "name":"KENYA"
   },
   {
-    "name":"KIRIBATI",
     "a2":"KI",
     "a3":"KIR",
-    "num":"296"
+    "num":"296",
+    "name":"KIRIBATI"
   },
   {
-    "name":"KOREA",
-    "a2":"DEMOCRATICPEOPLE'SREPUBLICOF",
-    "a3":"KP",
-    "num":"PRK"
+    "a2":"KP",
+    "a3":"PRK",
+    "num":"408",
+    "name":"KOREA (DEMOCRATIC PEOPLE'S REPUBLIC OF)"
   },
   {
-    "name":"KOREA",
-    "a2":"REPUBLICOF",
-    "a3":"KR",
-    "num":"KOR"
+    "a2":"KR",
+    "a3":"KOR",
+    "num":"410",
+    "name":"KOREA (REPUBLIC OF)"
   },
   {
-    "name":"KUWAIT",
     "a2":"KW",
     "a3":"KWT",
-    "num":"414"
+    "num":"414",
+    "name":"KUWAIT"
   },
   {
-    "name":"KYRGYZSTAN",
     "a2":"KG",
     "a3":"KGZ",
-    "num":"417"
+    "num":"417",
+    "name":"KYRGYZSTAN"
   },
   {
-    "name":"LAOPEOPLE'SDEMOCRATICREPUBLIC",
     "a2":"LA",
     "a3":"LAO",
-    "num":"418"
+    "num":"418",
+    "name":"LAOPEOPLE'SDEMOCRATICREPUBLIC"
   },
   {
-    "name":"LATVIA",
     "a2":"LV",
     "a3":"LVA",
-    "num":"428"
+    "num":"428",
+    "name":"LATVIA"
   },
   {
-    "name":"LEBANON",
     "a2":"LB",
     "a3":"LBN",
-    "num":"422"
+    "num":"422",
+    "name":"LEBANON"
   },
   {
-    "name":"LESOTHO",
     "a2":"LS",
     "a3":"LSO",
-    "num":"426"
+    "num":"426",
+    "name":"LESOTHO"
   },
   {
-    "name":"LIBERIA",
     "a2":"LR",
     "a3":"LBR",
-    "num":"430"
+    "num":"430",
+    "name":"LIBERIA"
   },
   {
-    "name":"LIBYANARABJAMAHIRIYA",
     "a2":"LY",
     "a3":"LBY",
-    "num":"434"
+    "num":"434",
+    "name":"LIBYANARABJAMAHIRIYA"
   },
   {
-    "name":"LIECHTENSTEIN",
     "a2":"LI",
     "a3":"LIE",
-    "num":"438"
+    "num":"438",
+    "name":"LIECHTENSTEIN"
   },
   {
-    "name":"LITHUANIA",
     "a2":"LT",
     "a3":"LTU",
-    "num":"440"
+    "num":"440",
+    "name":"LITHUANIA"
   },
   {
-    "name":"LUXEMBOURG",
     "a2":"LU",
     "a3":"LUX",
-    "num":"442"
+    "num":"442",
+    "name":"LUXEMBOURG"
   },
   {
-    "name":"MACAU",
     "a2":"MO",
     "a3":"MAC",
-    "num":"446"
+    "num":"446",
+    "name":"MACAU"
   },
   {
-    "name":"MACEDONIA",
     "a2":"THEFORMERYUGOSLAVREPUBLICOF",
     "a3":"MK",
-    "num":"MKD"
+    "num":"MKD",
+    "name":"MACEDONIA"
   },
   {
-    "name":"MADAGASCAR",
     "a2":"MG",
     "a3":"MDG",
-    "num":"450"
+    "num":"450",
+    "name":"MADAGASCAR"
   },
   {
-    "name":"MALAWI",
     "a2":"MW",
     "a3":"MWI",
-    "num":"454"
+    "num":"454",
+    "name":"MALAWI"
   },
   {
-    "name":"MALAYSIA",
     "a2":"MY",
     "a3":"MYS",
-    "num":"458"
+    "num":"458",
+    "name":"MALAYSIA"
   },
   {
-    "name":"MALDIVES",
     "a2":"MV",
     "a3":"MDV",
-    "num":"462"
+    "num":"462",
+    "name":"MALDIVES"
   },
   {
-    "name":"MALI",
     "a2":"ML",
     "a3":"MLI",
-    "num":"466"
+    "num":"466",
+    "name":"MALI"
   },
   {
-    "name":"MALTA",
     "a2":"MT",
     "a3":"MLT",
-    "num":"470"
+    "num":"470",
+    "name":"MALTA"
   },
   {
-    "name":"MARSHALLISLANDS",
     "a2":"MH",
     "a3":"MHL",
-    "num":"584"
+    "num":"584",
+    "name":"MARSHALLISLANDS"
   },
   {
-    "name":"MARTINIQUE",
     "a2":"MQ",
     "a3":"MTQ",
-    "num":"474"
+    "num":"474",
+    "name":"MARTINIQUE"
   },
   {
-    "name":"MAURITANIA",
     "a2":"MR",
     "a3":"MRT",
-    "num":"478"
+    "num":"478",
+    "name":"MAURITANIA"
   },
   {
-    "name":"MAURITIUS",
     "a2":"MU",
     "a3":"MUS",
-    "num":"480"
+    "num":"480",
+    "name":"MAURITIUS"
   },
   {
-    "name":"MAYOTTE",
     "a2":"YT",
     "a3":"MYT",
-    "num":"175"
+    "num":"175",
+    "name":"MAYOTTE"
   },
   {
-    "name":"MEXICO",
     "a2":"MX",
     "a3":"MEX",
-    "num":"484"
+    "num":"484",
+    "name":"MEXICO"
   },
   {
-    "name":"MICRONESIA",
     "a2":"FEDERATEDSTATESOF",
     "a3":"FM",
-    "num":"FSM"
+    "num":"FSM",
+    "name":"MICRONESIA"
   },
   {
-    "name":"MOLDOVA",
     "a2":"REPUBLICOF",
     "a3":"MD",
-    "num":"MDA"
+    "num":"MDA",
+    "name":"MOLDOVA"
   },
   {
-    "name":"MONACO",
     "a2":"MC",
     "a3":"MCO",
-    "num":"492"
+    "num":"492",
+    "name":"MONACO"
   },
   {
-    "name":"MONGOLIA",
     "a2":"MN",
     "a3":"MNG",
-    "num":"496"
+    "num":"496",
+    "name":"MONGOLIA"
   },
   {
-    "name":"MONTSERRAT",
     "a2":"MS",
     "a3":"MSR",
-    "num":"500"
+    "num":"500",
+    "name":"MONTSERRAT"
   },
   {
-    "name":"MOROCCO",
     "a2":"MA",
     "a3":"MAR",
-    "num":"504"
+    "num":"504",
+    "name":"MOROCCO"
   },
   {
-    "name":"MOZAMBIQUE",
     "a2":"MZ",
     "a3":"MOZ",
-    "num":"508"
+    "num":"508",
+    "name":"MOZAMBIQUE"
   },
   {
-    "name":"MYANMAR",
     "a2":"MM",
     "a3":"MMR",
-    "num":"104"
+    "num":"104",
+    "name":"MYANMAR"
   },
   {
-    "name":"NAMIBIA",
     "a2":"NA",
     "a3":"NAM",
-    "num":"516"
+    "num":"516",
+    "name":"NAMIBIA"
   },
   {
-    "name":"NAURU",
     "a2":"NR",
     "a3":"NRU",
-    "num":"520"
+    "num":"520",
+    "name":"NAURU"
   },
   {
-    "name":"NEPAL",
     "a2":"NP",
     "a3":"NPL",
-    "num":"524"
+    "num":"524",
+    "name":"NEPAL"
   },
   {
-    "name":"NETHERLANDS",
     "a2":"NL",
     "a3":"NLD",
-    "num":"528"
+    "num":"528",
+    "name":"NETHERLANDS"
   },
   {
-    "name":"NETHERLANDSANTILLES",
     "a2":"AN",
     "a3":"ANT",
-    "num":"530"
+    "num":"530",
+    "name":"NETHERLANDSANTILLES"
   },
   {
-    "name":"NEWCALEDONIA",
     "a2":"NC",
     "a3":"NCL",
-    "num":"540"
+    "num":"540",
+    "name":"NEWCALEDONIA"
   },
   {
-    "name":"NEWZEALAND",
     "a2":"NZ",
     "a3":"NZL",
-    "num":"554"
+    "num":"554",
+    "name":"NEWZEALAND"
   },
   {
-    "name":"NICARAGUA",
     "a2":"NI",
     "a3":"NIC",
-    "num":"558"
+    "num":"558",
+    "name":"NICARAGUA"
   },
   {
-    "name":"NIGER",
     "a2":"NE",
     "a3":"NER",
-    "num":"562"
+    "num":"562",
+    "name":"NIGER"
   },
   {
-    "name":"NIGERIA",
     "a2":"NG",
     "a3":"NGA",
-    "num":"566"
+    "num":"566",
+    "name":"NIGERIA"
   },
   {
-    "name":"NIUE",
     "a2":"NU",
     "a3":"NIU",
-    "num":"570"
+    "num":"570",
+    "name":"NIUE"
   },
   {
-    "name":"NORFOLKISLAND",
     "a2":"NF",
     "a3":"NFK",
-    "num":"574"
+    "num":"574",
+    "name":"NORFOLKISLAND"
   },
   {
-    "name":"NORTHERNMARIANAISLANDS",
     "a2":"MP",
     "a3":"MNP",
-    "num":"580"
+    "num":"580",
+    "name":"NORTHERNMARIANAISLANDS"
   },
   {
-    "name":"NORWAY",
     "a2":"NO",
     "a3":"NOR",
-    "num":"578"
+    "num":"578",
+    "name":"NORWAY"
   },
   {
-    "name":"OMAN",
     "a2":"OM",
     "a3":"OMN",
-    "num":"512"
+    "num":"512",
+    "name":"OMAN"
   },
   {
-    "name":"PAKISTAN",
     "a2":"PK",
     "a3":"PAK",
-    "num":"586"
+    "num":"586",
+    "name":"PAKISTAN"
   },
   {
-    "name":"PALAU",
     "a2":"PW",
     "a3":"PLW",
-    "num":"585"
+    "num":"585",
+    "name":"PALAU"
   },
   {
-    "name":"PANAMA",
     "a2":"PA",
     "a3":"PAN",
-    "num":"591"
+    "num":"591",
+    "name":"PANAMA"
   },
   {
-    "name":"PAPUANEWGUINEA",
     "a2":"PG",
     "a3":"PNG",
-    "num":"598"
+    "num":"598",
+    "name":"PAPUANEWGUINEA"
   },
   {
-    "name":"PARAGUAY",
     "a2":"PY",
     "a3":"PRY",
-    "num":"600"
+    "num":"600",
+    "name":"PARAGUAY"
   },
   {
-    "name":"PERU",
     "a2":"PE",
     "a3":"PER",
-    "num":"604"
+    "num":"604",
+    "name":"PERU"
   },
   {
-    "name":"PHILIPPINES",
     "a2":"PH",
     "a3":"PHL",
-    "num":"608"
+    "num":"608",
+    "name":"PHILIPPINES"
   },
   {
-    "name":"PITCAIRN",
     "a2":"PN",
     "a3":"PCN",
-    "num":"612"
+    "num":"612",
+    "name":"PITCAIRN"
   },
   {
-    "name":"POLAND",
     "a2":"PL",
     "a3":"POL",
-    "num":"616"
+    "num":"616",
+    "name":"POLAND"
   },
   {
-    "name":"PORTUGAL",
     "a2":"PT",
     "a3":"PRT",
-    "num":"620"
+    "num":"620",
+    "name":"PORTUGAL"
   },
   {
-    "name":"PUERTORICO",
     "a2":"PR",
     "a3":"PRI",
-    "num":"630"
+    "num":"630",
+    "name":"PUERTORICO"
   },
   {
-    "name":"QATAR",
     "a2":"QA",
     "a3":"QAT",
-    "num":"634"
+    "num":"634",
+    "name":"QATAR"
   },
   {
-    "name":"REUNION",
     "a2":"RE",
     "a3":"REU",
-    "num":"638"
+    "num":"638",
+    "name":"REUNION"
   },
   {
-    "name":"ROMANIA",
     "a2":"RO",
     "a3":"ROM",
-    "num":"642"
+    "num":"642",
+    "name":"ROMANIA"
   },
   {
-    "name":"RUSSIANFEDERATION",
     "a2":"RU",
     "a3":"RUS",
-    "num":"643"
+    "num":"643",
+    "name":"RUSSIANFEDERATION"
   },
   {
-    "name":"RWANDA",
     "a2":"RW",
     "a3":"RWA",
-    "num":"646"
+    "num":"646",
+    "name":"RWANDA"
   },
   {
-    "name":"SAINTKITTSANDNEVIS",
     "a2":"KN",
     "a3":"KNA",
-    "num":"659"
+    "num":"659",
+    "name":"SAINTKITTSANDNEVIS"
   },
   {
-    "name":"SAINTLUCIA",
     "a2":"LC",
     "a3":"LCA",
-    "num":"662"
+    "num":"662",
+    "name":"SAINTLUCIA"
   },
   {
-    "name":"SAINTVINCENTANDTHEGRENADINES",
     "a2":"VC",
     "a3":"VCT",
-    "num":"670"
+    "num":"670",
+    "name":"SAINTVINCENTANDTHEGRENADINES"
   },
   {
-    "name":"SAMOA",
     "a2":"WS",
     "a3":"WSM",
-    "num":"882"
+    "num":"882",
+    "name":"SAMOA"
   },
   {
-    "name":"SANMARINO",
     "a2":"SM",
     "a3":"SMR",
-    "num":"674"
+    "num":"674",
+    "name":"SANMARINO"
   },
   {
-    "name":"SAOTOMEANDPRINCIPE",
     "a2":"ST",
     "a3":"STP",
-    "num":"678"
+    "num":"678",
+    "name":"SAOTOMEANDPRINCIPE"
   },
   {
-    "name":"SAUDIARABIA",
     "a2":"SA",
     "a3":"SAU",
-    "num":"682"
+    "num":"682",
+    "name":"SAUDIARABIA"
   },
   {
-    "name":"SENEGAL",
     "a2":"SN",
     "a3":"SEN",
-    "num":"686"
+    "num":"686",
+    "name":"SENEGAL"
   },
   {
-    "name":"SEYCHELLES",
     "a2":"SC",
     "a3":"SYC",
-    "num":"690"
+    "num":"690",
+    "name":"SEYCHELLES"
   },
   {
-    "name":"SIERRALEONE",
     "a2":"SL",
     "a3":"SLE",
-    "num":"694"
+    "num":"694",
+    "name":"SIERRALEONE"
   },
   {
-    "name":"SINGAPORE",
     "a2":"SG",
     "a3":"SGP",
-    "num":"702"
+    "num":"702",
+    "name":"SINGAPORE"
   },
   {
-    "name":"SLOVAKIA(SlovakRepublic)",
     "a2":"SK",
     "a3":"SVK",
-    "num":"703"
+    "num":"703",
+    "name":"SLOVAKIA(SlovakRepublic)"
   },
   {
-    "name":"SLOVENIA",
     "a2":"SI",
     "a3":"SVN",
-    "num":"705"
+    "num":"705",
+    "name":"SLOVENIA"
   },
   {
-    "name":"SOLOMONISLANDS",
     "a2":"SB",
     "a3":"SLB",
-    "num":"090"
+    "num":"090",
+    "name":"SOLOMONISLANDS"
   },
   {
-    "name":"SOMALIA",
     "a2":"SO",
     "a3":"SOM",
-    "num":"706"
+    "num":"706",
+    "name":"SOMALIA"
   },
   {
-    "name":"SOUTHAFRICA",
     "a2":"ZA",
     "a3":"ZAF",
-    "num":"710"
+    "num":"710",
+    "name":"SOUTHAFRICA"
   },
   {
-    "name":"SOUTHGEORGIAANDTHESOUTHSANDWICHISLANDS",
     "a2":"GS",
     "a3":"SGS",
-    "num":"239"
+    "num":"239",
+    "name":"SOUTHGEORGIAANDTHESOUTHSANDWICHISLANDS"
   },
   {
-    "name":"SPAIN",
     "a2":"ES",
     "a3":"ESP",
-    "num":"724"
+    "num":"724",
+    "name":"SPAIN"
   },
   {
-    "name":"SRILANKA",
     "a2":"LK",
     "a3":"LKA",
-    "num":"144"
+    "num":"144",
+    "name":"SRILANKA"
   },
   {
-    "name":"ST.HELENA",
     "a2":"SH",
     "a3":"SHN",
-    "num":"654"
+    "num":"654",
+    "name":"ST.HELENA"
   },
   {
-    "name":"ST.PIERREANDMIQUELON",
     "a2":"PM",
     "a3":"SPM",
-    "num":"666"
+    "num":"666",
+    "name":"ST.PIERREANDMIQUELON"
   },
   {
-    "name":"SUDAN",
     "a2":"SD",
     "a3":"SDN",
-    "num":"736"
+    "num":"736",
+    "name":"SUDAN"
   },
   {
-    "name":"SURINAME",
     "a2":"SR",
     "a3":"SUR",
-    "num":"740"
+    "num":"740",
+    "name":"SURINAME"
   },
   {
-    "name":"SVALBARDANDJANMAYENISLANDS",
     "a2":"SJ",
     "a3":"SJM",
-    "num":"744"
+    "num":"744",
+    "name":"SVALBARDANDJANMAYENISLANDS"
   },
   {
-    "name":"SWAZILAND",
     "a2":"SZ",
     "a3":"SWZ",
-    "num":"748"
+    "num":"748",
+    "name":"SWAZILAND"
   },
   {
-    "name":"SWEDEN",
     "a2":"SE",
     "a3":"SWE",
-    "num":"752"
+    "num":"752",
+    "name":"SWEDEN"
   },
   {
-    "name":"SWITZERLAND",
     "a2":"CH",
     "a3":"CHE",
-    "num":"756"
+    "num":"756",
+    "name":"SWITZERLAND"
   },
   {
-    "name":"SYRIANARABREPUBLIC",
     "a2":"SY",
     "a3":"SYR",
-    "num":"760"
+    "num":"760",
+    "name":"SYRIANARAB REPUBLIC"
   },
   {
-    "name":"TAIWAN",
-    "a2":"PROVINCEOFCHINA",
-    "a3":"TW",
-    "num":"TWN"
+    "a2":"TW",
+    "a3":"TWN",
+    "num":"158",
+    "name":"TAIWAN (REPUBLIC OF CHINA)"
   },
   {
-    "name":"TAJIKISTAN",
     "a2":"TJ",
     "a3":"TJK",
-    "num":"762"
+    "num":"762",
+    "name":"TAJIKISTAN"
   },
   {
-    "name":"TANZANIA",
-    "a2":"UNITEDREPUBLICOF",
-    "a3":"TZ",
-    "num":"TZA"
+    "a2":"TZ",
+    "a3":"TZA",
+    "num":"834",
+    "name":"TANZANIA (UNITED REPUBLIC OF)"
   },
   {
-    "name":"THAILAND",
     "a2":"TH",
     "a3":"THA",
-    "num":"764"
+    "num":"764",
+    "name":"THAILAND"
   },
   {
-    "name":"TOGO",
     "a2":"TG",
     "a3":"TGO",
-    "num":"768"
+    "num":"768",
+    "name":"TOGO"
   },
   {
-    "name":"TOKELAU",
     "a2":"TK",
     "a3":"TKL",
-    "num":"772"
+    "num":"772",
+    "name":"TOKELAU"
   },
   {
-    "name":"TONGA",
     "a2":"TO",
     "a3":"TON",
-    "num":"776"
+    "num":"776",
+    "name":"TONGA"
   },
   {
-    "name":"TRINIDADANDTOBAGO",
     "a2":"TT",
     "a3":"TTO",
-    "num":"780"
+    "num":"780",
+    "name":"TRINIDADANDTOBAGO"
   },
   {
-    "name":"TUNISIA",
     "a2":"TN",
     "a3":"TUN",
-    "num":"788"
+    "num":"788",
+    "name":"TUNISIA"
   },
   {
-    "name":"TURKEY",
     "a2":"TR",
     "a3":"TUR",
-    "num":"792"
+    "num":"792",
+    "name":"TURKEY"
   },
   {
-    "name":"TURKMENISTAN",
     "a2":"TM",
     "a3":"TKM",
-    "num":"795"
+    "num":"795",
+    "name":"TURKMENISTAN"
   },
   {
-    "name":"TURKSANDCAICOSISLANDS",
     "a2":"TC",
     "a3":"TCA",
-    "num":"796"
+    "num":"796",
+    "name":"TURKSANDCAICOSISLANDS"
   },
   {
-    "name":"TUVALU",
     "a2":"TV",
     "a3":"TUV",
-    "num":"798"
+    "num":"798",
+    "name":"TUVALU"
   },
   {
-    "name":"UGANDA",
     "a2":"UG",
     "a3":"UGA",
-    "num":"800"
+    "num":"800",
+    "name":"UGANDA"
   },
   {
-    "name":"UKRAINE",
     "a2":"UA",
     "a3":"UKR",
-    "num":"804"
+    "num":"804",
+    "name":"UKRAINE"
   },
   {
-    "name":"UNITEDARABEMIRATES",
     "a2":"AE",
     "a3":"ARE",
-    "num":"784"
+    "num":"784",
+    "name":"UNITEDARABEMIRATES"
   },
   {
-    "name":"UNITEDKINGDOM",
     "a2":"GB",
     "a3":"GBR",
-    "num":"826"
+    "num":"826",
+    "name":"UNITEDKINGDOM"
   },
   {
-    "name":"UNITEDSTATES",
     "a2":"US",
     "a3":"USA",
-    "num":"840"
+    "num":"840",
+    "name":"UNITEDSTATES"
   },
   {
-    "name":"UNITEDSTATESMINOROUTLYINGISLANDS",
     "a2":"UM",
     "a3":"UMI",
-    "num":"581"
+    "num":"581",
+    "name":"UNITEDSTATESMINOROUTLYINGISLANDS"
   },
   {
-    "name":"URUGUAY",
     "a2":"UY",
     "a3":"URY",
-    "num":"858"
+    "num":"858",
+    "name":"URUGUAY"
   },
   {
-    "name":"UZBEKISTAN",
     "a2":"UZ",
     "a3":"UZB",
-    "num":"860"
+    "num":"860",
+    "name":"UZBEKISTAN"
   },
   {
-    "name":"VANUATU",
     "a2":"VU",
     "a3":"VUT",
-    "num":"548"
+    "num":"548",
+    "name":"VANUATU"
   },
   {
-    "name":"VATICANCITYSTATE(HOLYSEE)",
     "a2":"VA",
     "a3":"VAT",
-    "num":"336"
+    "num":"336",
+    "name":"VATICANCITYSTATE(HOLYSEE)"
   },
   {
-    "name":"VENEZUELA",
     "a2":"VE",
     "a3":"VEN",
-    "num":"862"
+    "num":"862",
+    "name":"VENEZUELA"
   },
   {
-    "name":"VIETNAM",
     "a2":"VN",
     "a3":"VNM",
-    "num":"704"
+    "num":"704",
+    "name":"VIETNAM"
   },
   {
-    "name":"VIRGINISLANDS(BRITISH)",
     "a2":"VG",
     "a3":"VGB",
-    "num":"092"
+    "num":"092",
+    "name":"VIRGINISLANDS(BRITISH)"
   },
   {
-    "name":"VIRGINISLANDS(U.S.)",
     "a2":"VI",
     "a3":"VIR",
-    "num":"850"
+    "num":"850",
+    "name":"VIRGINISLANDS(U.S.)"
   },
   {
-    "name":"WALLISANDFUTUNAISLANDS",
     "a2":"WF",
     "a3":"WLF",
-    "num":"876"
+    "num":"876",
+    "name":"WALLISANDFUTUNAISLANDS"
   },
   {
-    "name":"WESTERNSAHARA",
     "a2":"EH",
     "a3":"ESH",
-    "num":"732"
+    "num":"732",
+    "name":"WESTERNSAHARA"
   },
   {
-    "name":"YEMEN",
     "a2":"YE",
     "a3":"YEM",
-    "num":"887"
+    "num":"887",
+    "name":"YEMEN"
   },
   {
-    "name":"YUGOSLAVIA",
     "a2":"YU",
     "a3":"YUG",
-    "num":"891"
+    "num":"891",
+    "name":"YUGOSLAVIA"
   },
   {
-    "name":"ZAIRE",
     "a2":"ZR",
     "a3":"ZAR",
-    "num":"180"
+    "num":"180",
+    "name":"ZAIRE"
   },
   {
-    "name":"ZAMBIA",
     "a2":"ZM",
     "a3":"ZMB",
-    "num":"894"
+    "num":"894",
+    "name":"ZAMBIA"
   },
   {
-    "name":"ZIMBABWE",
     "a2":"ZW",
     "a3":"ZWE",
-    "num":"716"
+    "num":"716",
+    "name":"ZIMBABWE"
   }];
 
   return codes;
