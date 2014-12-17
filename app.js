@@ -1,3 +1,6 @@
+(function(global) {
+'use strict';
+
 var gdp = getCountryGDP(),
     codes= getCountryCodes(),
     codeNumToA3 = {},
@@ -38,7 +41,6 @@ d3.json(json, function(err, map) {
            return;
          }
        });
-       delete codes, gdp;       
        
        return "p" + a3Code;
      })
@@ -163,3 +165,5 @@ var onPinEvent = function(that, d, eventType1, eventType2) {
     }
   }, false);
 }
+
+}(this))
