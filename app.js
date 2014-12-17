@@ -6,7 +6,7 @@ var gdp = getCountryGDP(),
 /* gdb map */
 var svg = d3.select("svg#gdpMap"),
     json = "world-topo-110m.json",
-    proj = d3.geo.mercator().center([0, 58]).scale(180),
+    proj = d3.geo.mercator().center([0, 55]).scale(180),
     path = d3.geo.path().projection(proj);
 
 d3.json(json, function(err, map) {
@@ -55,13 +55,24 @@ d3.json(json, function(err, map) {
        }
        return "rgb("+ r + "," + g + "," + b + ")";
      });
+
   /* draw text */
+  //TEST: algin text
+  var eu = ["ALB","AND","BLR","BIH","BGR","HRV","CYP","CZE","EST","FRO","GIB","HUN","LUA","SRB","SRV","SVK","VAT","RSB","XKX","MNE","BEL"]; 
+      //= ["AUT","BEL","DNK","GRC","LIE","LUX","PRT"];
   svg.selectAll("text")
      .data(topojson.feature(map, map.objects.countries).features)
      .enter()
      .append("text")
      .attr("transform", function(d) {
-       return "translate(" + path.centroid(d) + ")"; 
+       var center = path.centroid(d),
+           flag = false;
+       //TEST1       
+       /*if (data[d.id]) {
+         flag = eu.filter(function(e) { return e === data[d.id].a3;});
+         if (flag.length>0) { center = [350, center[1]]; }
+       }*/
+       return "translate(" + center + ")"; 
      })
      .attr("class", function(d) {
        
@@ -73,7 +84,13 @@ d3.json(json, function(err, map) {
      })
      .attr("data-code", function(d) {return codeNumToA3[d.id];})
      .attr("id", function(d) {return "t" + codeNumToA3[d.id];})
-     .attr("dy", "1em")
+     .attr("dy", "2em")
+     .style("text-anchor", function(d) { 
+       //TEST2
+       var x = path.centroid(d)[0],
+           align = ((x > 525 && x < 900) || x < 150) ? "start" : "end";
+       return align;
+     })
      .text(function(d) {
        var marker = d.properties.name;
        // use country names base on the gdp table

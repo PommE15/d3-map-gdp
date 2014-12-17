@@ -56,11 +56,11 @@
 .caption-end { left: 200px; }
 
 svg {
-  width: 975px;
+  width: 1000px;
   height: 760px;
   position: fixed;
   top: 0;
-  margin-left: -76px;
+  margin-left: -102px;
 }
 svg path {
   fill: lightgrey;
